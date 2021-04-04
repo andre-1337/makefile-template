@@ -1,8 +1,8 @@
 .PHONY: projectname
 
-SANATIZER := -fsanatize=undefined -fsanatize=address -fsanatize=leak
+SANITIZER := -fsanitize=undefined -fsanitize=address -fsanitize=leak
 
-FLAGS := -Wall -Wextra -Werror -pedantic -std=c11 $(SANATIZER)
+FLAGS := -Wall -Wextra -Werror -pedantic -std=c11 $(SANITIZER)
 
 OPTLVL := -O3
 
