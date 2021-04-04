@@ -1,6 +1,6 @@
 .PHONY: projectname
 
-SANATIZER := -fsanatize=undefined -fsanatize=address -fsanatize=leak -lasan
+SANATIZER := -fsanatize=undefined -fsanatize=address -fsanatize=leak
 
 FLAGS := -Wall -Wextra -Werror -pedantic -std=c11 $(SANATIZER)
 
